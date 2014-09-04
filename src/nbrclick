@@ -1,0 +1,30 @@
+// variable contenant le nombre de clics (récuperée grace à php)
+var nbclic = <?php echo $nbclic; ?>;
+ 
+// fonction appelée à chaque clic sur le lien
+function compteur()
+{
+     // on augmente la valeur de la variable
+     nbclic++;
+ 
+ 
+     // on l'enregistre
+     data = 'nbclic='+nbclic+'';
+ 
+     var xhr;
+     if (window.XMLHttpRequest) xhr = new XMLHttpRequest();
+     else if (window.ActiveXObject) xhr = new ActiveXObject('Microsoft.XMLHTTP');
+     else
+     {
+          alert('Ce navigateur ne supporte pas XMLHttpRequest');
+          return;
+     }
+ 
+     xhr.open('POST','nbclic.php',true);
+     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+     xhr.send(data);
+ 
+ 
+     // on redirige le client vers la page de téléchargement
+     document.location.href = "telechargement.php"
+}

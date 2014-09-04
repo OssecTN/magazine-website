@@ -1,0 +1,112 @@
+body{ 
+margin: 0px;
+background-color: #f1f1f1;
+}
+#pagetop {
+    background:url(style/header.png) repeat-x;
+    height:43px;
+    opacity: 1;
+    filter: alpha(opacity=80);	
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+#pagetop   #pagetopwrap{
+    width: 1000px;
+	margin: 0px auto;
+	height: 43px;
+}
+
+#pagetop   #pagetopwrap #beta{ 
+   
+   margin: 0px auto;
+   float:left;
+   text-align:center;
+   height: 30px; 
+   width:100px; 
+}
+
+
+#pagetop   #pagetopwrap #title{ 
+   font-size: 18px;
+   margin: 10px auto;
+   float:left;
+   text-align:center;
+   height: 30px; 
+   width:380px;
+   color:#f1f1f1;
+   
+}
+#pagetop   #pagetopwrap #title a{
+ color:#dddddd;
+   text-decoration:none; 
+}
+
+
+#pagetop   #pagetopwrap #menu{ 
+   font-size: 18px;
+   margin: -8px auto;
+   float:left;
+   text-align:center;
+   height: 30px; 
+   width:520px;
+   color:#f1f1f1;
+   
+   
+}
+
+#pagetop   #pagetopwrap #menu li{ 
+display : inline;
+
+
+}
+
+#pagetop   #pagetopwrap #menu a{
+   color:#dddddd;
+   text-decoration:none; 
+   
+ }
+#pagetop   #pagetopwrap #menu  a:hover{
+   color:#fff; 
+}
+
+
+
+#pagemiddle{
+        width: 1200px;
+	margin: 0px auto;	
+
+}
+
+
+#pagemiddle #contenu{ 
+       
+	margin: 20px auto;
+	min-height:400px;
+        
+}
+
+
+#pagebottom{
+        text-align:center;
+	color:#0d212f;
+	font-family: Lato;
+}
+#pagebottom a{   
+	text-decoration:none;
+	color:purple;
+}
+#pagebottom a:hover{
+   color:#203342; 
+    
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(Lato-Bol.ttf);
+}
+
+
+@font-face {
+    font-family: segoeuil;
+    src: url(SEGOEUIL.ttf);
+}
+
