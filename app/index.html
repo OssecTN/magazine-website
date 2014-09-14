@@ -68,21 +68,22 @@
               </p>
                 Have a pleasant reading !
               </p>
-              <a class="btn btn-primary" href="#">Preview</a>
+              <button class="btn btn-primary" ng-click="open('mag03')">Preview</button>
             </div><!-- /.col-md-4 -->
             <div class="col-md-4">
+
+              <div class="alert alert-info alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  You think you are a talented writer? You are eager to learn new technologies an write about it? Then, you should absolutely become a staff contributor. <strong><a href="https://fb.com/ossec.tn" target="_blank">Join us now!!</a></strong>
+              </div>
+              
               <h2>Sponsors</h2>
             </div>
           </div><!-- /.row -->
           <hr>
           
           <!-- Content Row -->
-          <div class="row">
-            
-            <div  id="download" class="alert alert-info alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                You think you are a talented writer? You are eager to learn new technologies an write about it? Then, you should absolutely become a staff contributor. <strong><a href="https://fb.com/ossec.tn" target="_blank">Join us now!!</a></strong>
-            </div>
+          <div id="download" class="row">
 
             <div class="col-md-4">
               <h2>Sept 2014</h2>
@@ -93,7 +94,21 @@
               </p>
                 Have a pleasant reading !
               </p>
-                <a class="btn btn-success" href="static/pdf/03.pdf">Download</a>
+              <a class="btn btn-success" href="static/pdf/03.pdf">Download</a>
+
+              <button class="btn btn-primary" ng-click="open('mag03')">Preview</button>
+              <!-- Large modal -->
+              <script type="text/ng-template" id="mag03">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Conventus!</h3>
+                  </div>
+                  <div class="modal-body">
+                      // Magazine will be displayed here
+                  </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-success" ng-click="download()">Download</button>
+                  </div>
+              </script>
             </div><!-- /.col-md-4 -->
 
             <div class="col-md-4">
@@ -105,7 +120,21 @@
               </p>
                 Have a pleasant reading !
               </p>
-                <a class="btn btn-success" href="#">Download</a>
+              <a class="btn btn-success" href="#">Download</a>
+              <button class="btn btn-primary" ng-click="open('mag02')">Preview</button>
+              <!-- Large modal -->
+              <script type="text/ng-template" id="mag02">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Renatus!</h3>
+                  </div>
+                  <div class="modal-body">
+                      // Magazine will be displayed here
+                  </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-success" ng-click="download()">Download</button>
+                  </div>
+              </script>
+
             </div><!-- /.col-md-4 -->
 
             <div class="col-md-4">
@@ -117,7 +146,21 @@
               </p>
                 Have a pleasant reading !
               </p>
-                <a class="btn btn-success" href="#">Download</a>
+              <a class="btn btn-success" href="#">Download</a>
+              <button class="btn btn-primary" ng-click="open('mag01')">Preview</button>
+              <!-- Large modal -->
+              <script type="text/ng-template" id="mag01">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Cortus!</h3>
+                  </div>
+                  <div class="modal-body">
+                      // Magazine will be displayed here
+                  </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-success" ng-click="download()">Download</button>
+                  </div>
+              </script>
+
             </div><!-- /.col-md-4 -->
           </div><!-- /.row -->
           <!-- Footer -->
