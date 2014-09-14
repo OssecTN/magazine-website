@@ -2,6 +2,7 @@ var app = angular.module("app", ['ui.bootstrap']);
 
 app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log) {
 
+
 	$scope.open = function (url) {
 		$scope.url = url;
 	    var modalInstance = $modal.open({
