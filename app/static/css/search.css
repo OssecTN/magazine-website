@@ -1,6 +1,13 @@
+@media(min-width:768px) {
 body {
-  /*padding-top:50px;*/
+  padding-top:80px;
+  font-family: 'Open Sans', serif;
 /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+h2 {
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 .navbar-fixed-top .nav {
@@ -13,12 +20,6 @@ body {
 
 footer {
   margin-top: 10px;
-}
-
-@media(min-width:768px) {
-body {
-  padding-top:80px;
-/* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
 .margin-top{
@@ -40,6 +41,10 @@ body {
     height: 65px;
 }
 
+.icon{
+    width: 25px;
+    height: 25px;
+}
 /*magazine*/
 .left-border{
   border-top-left-radius:10px;
