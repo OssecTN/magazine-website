@@ -32,6 +32,14 @@ body {
 .navbar-fixed-top .navbar-brand {
   padding:15px 0
 }
+
+.beta{
+    display: block;
+    float: right;
+    width: 65px;
+    height: 65px;
+}
+
 /*magazine*/
 .left-border{
   border-top-left-radius:10px;
