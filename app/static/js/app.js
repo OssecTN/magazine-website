@@ -19,17 +19,37 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonDa
 		console.log($scope.magazines);
 	});
 
-	$scope.open = function (id) {
-		$scope.magazine = $scope.magazines[id]
+	function range(num) {
+		var array = [];
+		var i = 0;
+		var page = '';
+		while (i < num) {
+			i++;
+			page = '/static/pages/'+i+'.jpg';
+		    array.push(page);
+		}
+		console.log(array)
+        return array;   
+    }
+
+	$scope.open = function (id, num) {
+		$scope.magazine = $scope.magazines[id];
 		console.log('===============$scope.magazine')
 		console.log($scope.magazine)
+		template = "preview_"+id+".html"
+		/*$scope.pages = range(num);
+		console.log('################$scope.pages')
+		console.log($scope.pages)*/
 	    var modalInstance = $modal.open({
-	      templateUrl: id,
+	      templateUrl: template,
 	      controller: modalCtrl,
 	      size: 'lg',
 	      resolve: {
 	        magazine: function () {
 	          return $scope.magazine;
+	        },
+	        pages: function () {
+	          return $scope.pages;
 	        }
 	      }
 	    });
@@ -41,10 +61,15 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonDa
 	    });
     };
 
-    var modalCtrl = function ($scope, $modalInstance, magazine) {
+    var modalCtrl = function ($scope, $modalInstance, magazine, pages) {
 
 			$scope.magazine = magazine;
 			console.log($scope.magazine)
+			$scope.pages = pages;
+
+			/*$scope.set_background = function (img) {
+			    return "{ background-image: url("+img+"); }"
+			};*/
 
 			$scope.download = function () {
 				$modalInstance.close($scope.selected.item);

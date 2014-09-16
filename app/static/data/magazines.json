@@ -1,0 +1,22 @@
+[
+	{
+		"mag01" : {
+			"id" : "mag01",
+			"file": "/static/data/ossec_mag_01.pdf",
+			"title": "Cortus",
+			"download_link": "http://goo.gl/7kvL4Y"
+		},
+		"mag02" : {
+			"id" : "mag02",
+			"file": "/static/data/ossec_mag_02.pdf",
+			"title": "Renatus",
+			"download_link": "http://goo.gl/I6KHD5"
+		},
+		"mag03" : {
+			"id" : "mag03",
+			"file": "/static/data/ossec_mag_03.pdf",
+			"title": "Conventus",
+			"download_link": "http://goo.gl/3ssQFE"
+		}
+	}
+]

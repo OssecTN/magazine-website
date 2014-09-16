@@ -55,6 +55,22 @@ footer {
   border-bottom-right-radius:10px;
 }
 
+#magazine{
+    
+    margin:auto;
+    width:870px;
+    height:630px;
+    border-radius:10px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset; 
+}
+
+#magazine .turn-page{
+    background-color:#ccc;
+    background-size:100% 100%;
+}
+
+
 /*Share buttons*/
     #pt1 {
         width:100px;
