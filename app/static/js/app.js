@@ -1,17 +1,35 @@
 var app = angular.module("app", ['ui.bootstrap']);
 
-app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log) {
+app.factory('jsonData', ['$http',function($http){
+	return {
+		get: function(fileName,callback){
+			$http.get(fileName).
+			success(function(data, status) {
+				callback(data);
+			});
+		}
+	};
+}]);
 
+app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonData) {
 
-	$scope.open = function (url) {
-		$scope.url = url;
+	jsonData.get("static/data/magazines.json",function(data) {
+		$scope.magazines = data[0];
+		console.log('================$scope.magazines');
+		console.log($scope.magazines);
+	});
+
+	$scope.open = function (id) {
+		$scope.magazine = $scope.magazines[id]
+		console.log('===============$scope.magazine')
+		console.log($scope.magazine)
 	    var modalInstance = $modal.open({
-	      templateUrl: url,
+	      templateUrl: id,
 	      controller: modalCtrl,
 	      size: 'lg',
 	      resolve: {
-	        items: function () {
-	          return $scope.url;
+	        magazine: function () {
+	          return $scope.magazine;
 	        }
 	      }
 	    });
@@ -23,12 +41,10 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log) {
 	    });
     };
 
-    var modalCtrl = function ($scope, $modalInstance, items) {
+    var modalCtrl = function ($scope, $modalInstance, magazine) {
 
-			$scope.items = items;
-			$scope.selected = {
-				item: $scope.items[0]
-			};
+			$scope.magazine = magazine;
+			console.log($scope.magazine)
 
 			$scope.download = function () {
 				$modalInstance.close($scope.selected.item);
