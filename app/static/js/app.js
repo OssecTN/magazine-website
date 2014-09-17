@@ -15,8 +15,8 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonDa
 
 	jsonData.get("static/data/magazines.json",function(data) {
 		$scope.magazines = data[0];
-		console.log('================$scope.magazines');
-		console.log($scope.magazines);
+		/*console.log('================$scope.magazines');
+		console.log($scope.magazines);*/
 	});
 
 	function range(num) {
@@ -34,8 +34,8 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonDa
 
 	$scope.open = function (id, num) {
 		$scope.magazine = $scope.magazines[id];
-		console.log('===============$scope.magazine')
-		console.log($scope.magazine)
+		/*console.log('===============$scope.magazine')
+		console.log($scope.magazine)*/
 		template = "preview_"+id+".html"
 		/*$scope.pages = range(num);
 		console.log('################$scope.pages')
@@ -64,7 +64,7 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonDa
     var modalCtrl = function ($scope, $modalInstance, magazine, pages) {
 
 			$scope.magazine = magazine;
-			console.log($scope.magazine)
+			/*console.log($scope.magazine)*/
 			$scope.pages = pages;
 
 			/*$scope.set_background = function (img) {
