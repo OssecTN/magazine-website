@@ -1,0 +1,84 @@
+<div class="modal-header">
+    <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h2 class="modal-title">{{magazine.title}}!</h2>  
+    <div class="alert alert-success alert-dismissible" role="alert">
+    	<button type="button" class="close" data-dismiss="alert">
+    		<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+    	</button>
+	    <center>Use <strong>keyboard navigation</strong> with arrow keys.</center>
+	</div>
+</div>
+<div class="modal-body">
+
+    <div id="magazine">
+		<div style="background-image:url(/static/pages/mag02/1.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/2.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/3.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/4.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/5.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/6.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/7.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/8.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/9.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/10.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/11.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/12.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/13.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/14.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/15.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/16.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/17.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/18.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/19.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/20.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/21.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/22.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/23.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/24.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/25.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/26.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/27.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/28.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/29.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/30.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/31.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/32.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/33.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/34.jpg);" class="left-border"></div>
+		<div style="background-image:url(/static/pages/mag02/35.jpg);" class="right-border"></div>
+		<div style="background-image:url(/static/pages/mag02/36.jpg);" class="left-border"></div>
+	</div>
+
+</div>
+<div class="modal-footer">
+    <a class="btn btn-success" href="{{magazine.download}}" target="_blank">
+      <span class="glyphicon glyphicon-download-alt"></span> Download
+    </a>
+</div>
+
+
+<script type="text/javascript">
+	$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'double',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#magazine').turn('previous');
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+			
+	});
+</script>

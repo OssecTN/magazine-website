@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website of the Open Source Software ENSI Club Magazine">
+    <meta name="keywords" content="Open source,OSSEC,magazine,ENSI,Club,Tunisia,linux,mozilla">
+    <meta name="author" content="Dhia Abbassi">
+    <!-- <meta http-equiv="refresh" content="60"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico">
+		<title>OSSEC Magazine</title>
+
+    <!-- compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/search.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap-theme.min.css">
+    <!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	
+  <body ng-controller="mainCtrl">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img alt="Open Source Software ENSI Club" src="static/images/logo1.png" width="120">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+
+                <li>
+                  <a href="#download">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="http://ossec.tn" target="_blank">About us</a>
+                </li>
+
+                <li>
+                  <a href="http://ossec.tn/contact" target="_blank">Contact</a>
+                </li>
+              </ul>
+              <img src="static/images/beta_round.png" class="beta">
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+          <!-- Heading Row -->
+          <div class="row last">
+            <div class="col-md-4">
+              <img alt="ossec magazine" class="img-responsive img-rounded" src="static/images/03.jpg" >
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+              <h2>Conventus is released</h2>
+              <hr>
+              <p>
+                It is with great pleasure that we release the 3rd Number of the <i><b>OSSEC</b></i> magazine entitled "Conventus". 
+                As always , the magazine tries to bring you a variety of information and news concerning open source , brought to you by various article writers coming together from different places and engineering schools .. That's the spirit : open source unites us all 
+                <img src="static/images/face-glasses.png" class="icon"> 
+              </p>
+              <p>
+                The <i><b>OSSEC</b></i> team would like to take this opportunity to thank all the contributers for their great work and we hope we're getting closer to our readers's expectations .. 
+              </p>
+              <p>
+                We were pleased to receive your feedback on the last issue and we would like to hear from you this time as well , so remember that your opinion matters to us and send us an <a href="mailto:magazine@ossec.tn?Subject='OSSEC Magazine'" target="_top">e-mail</a> !
+              </p>
+                Have a pleasant reading ! <img src="static/images/icon_read.gif">
+              </p>
+              <button class="btn btn-primary" ng-click="open('mag03', 36)">
+                Preview <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4">
+              <h2>Partners</h2>
+              <hr>
+              <div class="alert alert-warning alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  You company/organization is an open source advocator? You are interested in our magazine and want to support us? It will be an honor to have your support. <strong><a href="mailto:magazine@ossec.tn?Subject='OSSEC Magazine'" target="_top">Contact us now!!</a></strong>
+              </div>
+              
+              <h4><img src="static/images/gold-medal.png" class="icon"> LPI Maghreb</h4>
+              <a href="http://www.lpi-maghreb.org/" target="_blank"> 
+                <img class="img-rounded" src="static/images/lpim.gif" width="100%" height="105">
+              </a>
+
+              <h4><img src="static/images/silver-medal.png" class="icon"> ENSI</h4>
+              <a href="http://www.ensi.rnu.tn" target="_blank"> 
+                <img class="img-rounded" src="static/images/ensi.jpg" width="100%" height="105">
+              </a>
+
+            </div>
+          </div><!-- /.row -->
+          <br>
+          <hr>
+
+          <div class="row">
+            <div class="alert alert-info alert-dismissible" role="alert">
+                You think you are a talented writer? You are eager to learn new technologies an write about it? Then, you should absolutely become a staff contributor. 
+                <strong><a href="https://fb.com/ossec.tn" target="_blank">Join us now!!</a></strong>
+            </div>
+          </div>   
+          
+          <!-- Content Row -->
+          <div id="download" class="row">
+          <center>
+            <div class="col-md-4">
+              <h2>Sept 2014</h2>
+              <img class="img-responsive img-thumbnail" alt="ossec magazine" src="static/images/03.jpg" width="200px">
+              <br>
+              <p>
+                <span class="label label-info">Firefox OS <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Arch Linux <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Java 8 <i class="glyphicon glyphicon-tag"></i></span>
+                <br class="last">
+                <span class="label label-info">Postgresql <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">C <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Rasberry Pi <i class="glyphicon glyphicon-tag"></i></span>
+                <br class="last">
+                <span class="label label-info">Security <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Buisness <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">WebRTC <i class="glyphicon glyphicon-tag"></i></span>
+              </p>
+              <div class="btn-group">
+                <a class="btn btn-success" href="{{magazines.mag03.download}}" target="_blank">
+                  <span class="glyphicon glyphicon-download-alt"></span> Download
+                </a>
+                <button class="btn btn-primary" ng-click="open('mag03', 36)">
+                  Preview <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div><!-- /.btn-group -->          
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4">
+              <h2>July 2014</h2>
+              <img class="img-responsive img-thumbnail img-rounded" alt="ossec magazine" src="static/images/02.jpg" width="200px">
+              <p>
+                <span class="label label-info">SSl <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Security <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Open Source <i class="glyphicon glyphicon-tag"></i></span>
+                <br class="last">
+                <span class="label label-info">Mozilla <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Linux <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Rasberry Pi <i class="glyphicon glyphicon-tag"></i></span>
+                <br class="last">
+                <span class="label label-info">Ubuntu<i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Steam OS <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Java <i class="glyphicon glyphicon-tag"></i></span>
+              </p>
+              <div class="btn-group">
+                <a class="btn btn-success" href="{{magazines.mag02.download}}" target="_blank">
+                  <span class="glyphicon glyphicon-download-alt"></span> Download
+                </a>
+                <button class="btn btn-primary" ng-click="open('mag02', 36)">
+                  Preview <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div><!-- /.btn-group -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4">
+              <h2>June 2012</h2>
+              <img class="img-responsive img-thumbnail img-rounded" alt="ossec magazine" src="static/images/01.jpg" width="200px">
+            <p>
+                <span class="label label-info">Mozilla <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Puppy Linux <i class="glyphicon glyphicon-tag"></i></span>
+                <br class="last">
+                <span class="label label-info">Android <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Ruby <i class="glyphicon glyphicon-tag"></i></span>
+                <br class="last">
+                <span class="label label-info">Open Source <i class="glyphicon glyphicon-tag"></i></span>
+                <span class="label label-info">Licence <i class="glyphicon glyphicon-tag"></i></span>
+
+              </p>
+              <div class="btn-group">
+                <a class="btn btn-success" href="{{magazines.mag01.download}}" target="_blank">
+                  <span class="glyphicon glyphicon-download-alt"></span> Download
+                </a>
+                <button class="btn btn-primary" popover="Preview is not available" popover-trigger="mouseenter">
+                  Preview <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div><!-- /.btn-group -->
+            </div><!-- /.col-md-4 -->
+            </center>
+          </div><!-- /.row -->
+          
+          <footer>
+                     
+          </footer>
+          <!-- Footer -->
+        </div>
+        <!-- /.container -->
+
+        <!-- compiled and minified JavaScript -->
+        <script type="text/javascript" src="static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/js/angular.min.js"></script>
+        <script type="text/javascript" src="static/js/ui-bootstrap-tpls.min.js"></script>
+        <script type="text/javascript" src="static/js/turn.min.js"></script>
+        <script type="text/javascript" src="static/js/app.js"></script>
+	    </body>
+</html>
