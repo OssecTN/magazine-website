@@ -4,7 +4,7 @@ magazine-website
 ### <a name="link"></a>Test source code locally
 
 1 - Clone the repository to your local system:
-   * `:~$ git clone git@github.com:DhiaTN/magazine-website.git`
+   * `:~$ git clone git@github.com:OssecTN/magazine-website.git`
       
 
 2 - **cd** to the project directory and run Python’s SimpleHTTPServer.
