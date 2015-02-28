@@ -64,12 +64,8 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonDa
     var modalCtrl = function ($scope, $modalInstance, magazine, pages) {
 
 			$scope.magazine = magazine;
-			/*console.log($scope.magazine)*/
 			$scope.pages = pages;
-
-			/*$scope.set_background = function (img) {
-			    return "{ background-image: url("+img+"); }"
-			};*/
+			/*console.log($scope.magazine)*/
 
 			$scope.download = function () {
 				$modalInstance.close($scope.selected.item);
@@ -81,3 +77,33 @@ app.controller("mainCtrl", function($scope, $http, $filter, $modal, $log, jsonDa
 	};
 
 })
+
+app.directive('magazine', [function () {
+	return {
+		scope: { id: '@magId'},
+		restrict: 'E',
+		replace: true,
+		templateUrl: 'magazine.html',
+		link: function (scope, elem, attrs) {
+			// $(window).ready(function() {
+			// 	elem.turn({
+			// 		display: 'double',
+			// 		acceleration: true,
+			// 		gradients: !$.isTouch,
+			// 		elevation:50,
+			// 		when: {
+			// 			turned: function(e, page) {
+			// 				// console.log('Current view: ', $(this).turn('view'));
+			// 			}
+			// 		}
+			// 	});
+			// });
+			// $(window).bind('keydown', function(e){
+			// 	if (e.keyCode==37)
+			// 		elem.turn('previous');
+			// 	else if (e.keyCode==39)
+			// 		elem.turn('next');
+			// });
+		}
+	};
+}])

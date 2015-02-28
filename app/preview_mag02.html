@@ -8,9 +8,10 @@
 	    <center>Use <strong>keyboard navigation</strong> with arrow keys.</center>
 	</div>
 </div>
-<div class="modal-body">
 
-    <div id="magazine">
+<div class="modal-body">
+	<!-- <magazine mag-id='{{magazine.id}}' /> -->
+	<div id="magazine">
 		<div style="background-image:url(/static/pages/mag02/1.jpg);" class="right-border"></div>
 		<div style="background-image:url(/static/pages/mag02/2.jpg);" class="left-border"></div>
 		<div style="background-image:url(/static/pages/mag02/3.jpg);" class="right-border"></div>
@@ -48,14 +49,13 @@
 		<div style="background-image:url(/static/pages/mag02/35.jpg);" class="right-border"></div>
 		<div style="background-image:url(/static/pages/mag02/36.jpg);" class="left-border"></div>
 	</div>
-
 </div>
+
 <div class="modal-footer">
     <a class="btn btn-success" href="{{magazine.download}}" target="_blank">
       <span class="glyphicon glyphicon-download-alt"></span> Download
     </a>
 </div>
-
 
 <script type="text/javascript">
 	$(window).ready(function() {
